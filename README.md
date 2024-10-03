@@ -9,410 +9,412 @@
            __/ |                                                  
           |___/             https://yellowweb.top                 
 
-If you like this script, PLEASE DONATE!  
+Se você gosta deste script, POR FAVOR, DOE!
 USDT TRC20: TKeNEVndhPSKXuYmpEwF4fVtWUvfCnWmra
-Bitcoin: bc1qqv99jasckntqnk0pkjnrjtpwu0yurm0qd0gnqv  
-Ethereum: 0xBC118D3FDE78eE393A154C29A4545c575506ad6B  
+Bitcoin: bc1qqv99jasckntqnk0pkjnrjtpwu0yurm0qd0gnqv
+Ethereum: 0xBC118D3FDE78eE393A154C29A4545c575506ad6B
 ```
 
-# Yellow Cloaker by [Yellow Web](https://yellowweb.top)
-English version of this help is down below 👇 Warning: this help is outdated! Now all of the settings are made using the UI: */admin?password=12345*
-**Use PHP version 7.2 or higher and create HTTPS certificates for all of your domains!**
-# Поддержка
-Если вы хотите, чтобы этот проект и дальше развивался, [**поддержите автора соткой-другой**!](https://t.me/yellowwebdonate_bot)
+# Yellow Cloaker por [Yellow Web](https://yellowweb.top)
+A versão em inglês desta ajuda está abaixo 👇 Aviso: esta ajuda está desatualizada! Agora todas as configurações são feitas usando a UI: */admin?password=12345*
+**Use PHP versão 7.2 ou superior e crie certificados HTTPS para todos os seus domínios!**
+# Apoiar
+Se você deseja que este projeto continue a se desenvolver, [**apoie o autor com cem ou dois**!](https://t.me/yellowwebdonate_bot)
 
-# Описание
-Модифицированный скрипт клоакинга для арбитража трафика, изначально найденный на просторах [Black Hat World](http://blackhatworld.com).
-# Справочные материалы
-- [ПОСЛЕДНИЙ стрим на которой разобран ВЕСЬ графический интерфей кло](https://youtu.be/-ikmpq-L8ZE)
-- [Стрим на котором подробно разобрана кло со всеми функциями](https://www.youtube.com/watch?v=XMua15r2dwg&feature=youtu.be)
-- [Видео с обзором новых возможностей тут.](https://www.youtube.com/watch?v=x-Z2Y4lEOc0&t=656s)
-- [Описание настройки первых версий тут!](https://yellowweb.top/%d0%ba%d0%bb%d0%be%d0%b0%d0%ba%d0%b8%d0%bd%d0%b3-%d0%b4%d0%bb%d1%8f-%d0%b1%d0%b5%d0%b4%d0%bd%d0%be%d0%b3%d0%be-%d0%bd%d0%be-%d1%83%d0%bc%d0%bd%d0%be%d0%b3%d0%be-%d0%b0%d1%80%d0%b1%d0%b8%d1%82%d1%80/)
+# Descrição
+Um script de camuflagem modificado para arbitragem de tráfego, originalmente encontrado na vastidão do [Black Hat World](http://blackhatworld.com).
+# Materiais de referência
+- [ÚLTIMA stream em que TODA a interface gráfica do clo é desmontada](https://youtu.be/-ikmpq-L8ZE)
+- [Stream em que o clo é analisado detalhadamente com todas as funções](https://www.youtube.com/watch?v=XMua15r2dwg&feature=youtu.be)
+- [Vídeo com uma visão geral dos novos recursos aqui.](https://www.youtube.com/watch?v=x-Z2Y4lEOc0&t=656s)
+- [Descrição das configurações para as primeiras versões aqui!](https://yellowweb.top/%d0%ba%d0%bb%d0%be%d0%b0%d0%ba%d0%b8%d0%bd% d0%b3 -%d0%b4%d0%bb%d1%8f-%d0%b1%d0%b5%d0%b4%d0%bd%d0%be%d0%b3%d0%be-%d0%bd %d0% be-%d1%83%d0%bc%d0%bd%d0%be%d0%b3%d0%be-%d0%b0%d1%80%d0%b1%d0%b8%d1%82 %d1% 80/)
 
-# Установка
-Скачайте последнюю версию всех файлов из этого репозитория и загрузите их себе на хостинг. На хостинге должен быть включён **PHP версии 7.2 или выше** и вы должны **создать HTTPS сертификат для вашего домена. Без HTTPS кло не будет корректно работать и вариант просто включить HTTPS на CloudFlare не катит! Да, если используете CloudFlare, то после того, как вам выпустили нормальный сертификат, включайте HTTPS в Full-режим!** Могу [порекомендовать вам хостинг Beget для кло](https://yellowweb.top/beget), он простой и удобный и там можно в пару кликов выпустить HTTPS-сертификат.
+# Instalação
+Baixe a versão mais recente de todos os arquivos deste repositório e carregue-os em sua hospedagem. Sua hospedagem deve ter **PHP versão 7.2 ou superior** habilitado e você deve **criar um certificado HTTPS para seu domínio. Sem HTTPS o clo não funcionará corretamente e a opção de simplesmente habilitar HTTPS no CloudFlare não funciona! Sim, se você usa CloudFlare, depois de ter recebido um certificado normal, habilite HTTPS no modo Full!** Posso [recomendar que você Beget hosting for clo](https://yellowweb.top/beget), é simples e conveniente e lá você pode emitir um certificado HTTPS com apenas alguns cliques.
 
-Если у вас есть локальные проклы и ленды, тогда создайте папку для каждого из них в корневой папке кло и скопируйте их файлы каждый в свою папку.
-*Например:*
-Если у вас 2 проклы и 2 ленда, создайте 2 папки для прокл: p1 и p2. И две папки для лендов: land1, land2.
+Se você tiver procls e landings locais, crie uma pasta para cada um deles na pasta raiz clo e copie os arquivos, cada um para sua própria pasta.
+*Por exemplo:*
+Se você tiver 2 procls e 2 landings, crie 2 pastas para procls: p1 e p2. E duas pastas para pousos: land1, land2.
 
-# Настройка
-Для настройки кло создан пользовательский интерфейс, доступный по адресу: https://ваш.домен/admin?password=12345 Не забудьте поменять пароль доступа!
-## Настройка вайта
-Вайт - это страница, которая показывается посетителю, который не прошёл через фильтры кло. Это нежелательные посетители.
+# Contexto
+Para configurar o clo foi criada uma interface de usuário, disponível em: https://seu.domínio/admin?password=12345 Não se esqueça de alterar sua senha de acesso!
+## Configurando o branco
+Branco é uma página que é mostrada a um visitante que não passou pelos filtros clo. Estes são visitantes indesejados.
 
-Для начала вам надо определиться, какой тип вайта вы хотите использовать. Кло может: 
-- показывать локальные вайты
-- редиректить на любой другой сайт
-- подгружать контент любого другого сайта через CURL
-- возвращать любой HTTP-код (например, ошибку 404 или просто 200)
+Primeiro, você precisa decidir que tipo de branco deseja usar. Clo pode:
+- mostrar brancos locais
+- redirecionar para qualquer outro site
+- carregue o conteúdo de qualquer outro site via CURL
+- retornar qualquer código HTTP (por exemplo, erro 404 ou apenas 200)
 
-Когда вы определились, поменяйте значение на одно из следующих:
+Depois de decidir, altere o valor para um dos seguintes:
 
-### Локальный вайт-пейдж из папки
-Это для локальный вайтов. Вы должны создать папку в корне кло, например *white* и скопировать туда все файлы вайта. Затем пропишите название папки в соответствующем поле 
-### Редирект
-Это для редиректа всего вайт-трафика на другой сайт. Вводим адрес сайта и выбираем тип редиректа. Это может быть: 301,302,303 или 307. Загуглите разницу, если вам это важно.
-### Curl
-Это для подгрузки контента любого другого сайта. Пишем адрес сайта в соответствующем поле.
-### Возврат HTTP-кода
-Вы можете вернуть любую HTTP-ошибку для вайт-трафика. Например: *404*. Либо код *200* для показа пустой страницы.
+### Página em branco local de uma pasta
+Isto é para os brancos locais. Você deve criar uma pasta na raiz do clo, por exemplo *white* e copiar todos os arquivos brancos lá. Em seguida, escreva o nome da pasta no campo apropriado
+### Redirecionar
+Isso redireciona todo o tráfego branco para outro site. Digite o endereço do site e selecione o tipo de redirecionamento. Pode ser: 301.302.303 ou 307. Pesquise no Google a diferença se for importante para você.
+###Enrolar
+Isto serve para carregar conteúdo de qualquer outro site. Escrevemos o endereço do site no campo apropriado.
+### Retorna o código HTTP
+Você pode retornar qualquer erro HTTP para tráfego branco. Por exemplo: *404*. Ou codifique *200* para mostrar uma página em branco.
 
-## Индивидуальные вайты для разных доменов
-Если у вас привязано к хостингу несколько доменов (или субдоменов) и вы льёте на них траф, вы можете сделать так, что для разных доменов будут показываться разные вайты, поменяв соответствующую настройку. 
+## Brancos individuais para diferentes domínios
+Se você tiver vários domínios (ou subdomínios) vinculados à sua hospedagem e enviar tráfego para eles, poderá garantir que diferentes brancos sejam mostrados para domínios diferentes, alterando a configuração apropriada.
 
-Затем заполните поля. Формат такой:
-`ваш.домен => whiteaction:value`
-Например:
-`https://mydomain.com => curl:https://ya.ru`
-Все возможные значения whiteaction: *folder, curl, redirect, error*
+Em seguida, preencha os campos. O formato é:
+`seu.domínio => whiteaction:value`
+Por exemplo:
+`https://meudominio.com => curl:https://ya.ru`
+Todos os valores possíveis de ação branca: *pasta, curl, redirecionamento, erro*
 
-## Настройка воронки
-Кло умеет работать со следующими воронками:
-- локальный ленд (или несколько лендов)
-- локальная прокла (проклы) -> локальные ленды
-- локальные проклы + редирект на ленд на другом сайте
-- сразу же редирект на другой сайт
 
-Разберём все эти конфигурации.
-### Локальные ленды
-Вы можете использовать один или несколько лендов. Траф будет разделён равномерно между ними. Скажем, для двух лендов это будет 50/50. Каждый ленд должен лежать в своей папке. Ставим **"Не использовать прелендинг"**, а метод загрузки ленидингов - **"Локальный лендинги из папки"**  Если лендов несколько, то используем запятую, как разделитель. Например:
-`land1,land2`
+## Configurando um funil
+Clo pode trabalhar com os seguintes funis:
+- pouso local (ou vários pousos)
+- prokla local (prokly) -> desembarques locais
+- golpes locais + redirecionamento para uma página de destino em outro site
+- redirecionar imediatamente para outro site
 
-### Локальные проклы - Локальные ленды
-Проделайте всё то же самое, что в пункте про **Локальные ленды** но также заполните поле **"Папки, где лежат преленды"**. Например, для двух прокл:
+Vejamos todas essas configurações.
+### Desembarques locais
+Você pode usar uma ou mais páginas de destino. O tráfego será dividido igualmente entre eles. Digamos que para dois pousos seja 50/50. Cada pouso deve estar em sua própria pasta. Definimos **"Não usar pré-aterrissagem"**, e o método de carregamento da página de destino é **"Destino local da pasta"** Se houver várias páginas de destino, use uma vírgula como separador. Por exemplo:
+`terreno1,terreno2`
+
+### Procls locais - Desembarques locais
+Faça o mesmo que no parágrafo sobre **Desembarques locais** mas preencha também o campo **"Pastas onde estão localizados os pré-pousos"**. Por exemplo, para dois procl:
 `p1,p2`
-### Локальные проклы + redirect
-Заполняем названия папок прокл. Например, для двух прокл:
+### Golpes locais + redirecionamento
+Preencha os nomes das pastas. Por exemplo, para dois procl:
 `p1,p2`
-Затем заменяем **"Метод загрузки лендингов"** на *Редирект*. Последний шаг: заполните адрес редиректа.
-### Сразу редирект
-Если вы просто хотите редиректить весь проходящий по фильтрам кло траф,то тогда используйте **$black_action = *'redirect'*** и заполните адрес редиректа **$black_redirect_url**. Также выберите тип редиректа: 301,302,303 or 307. Загуглите разницу, если вам это важно. Введите тип редиректа в **$black_redirect_type**.
-### Настройка скрипта конверсий локального ленда
-У каждого ленда есть возможность отправлять лиды в ПП (кэп!). И у каждой ПП своя механика отправки этих самых лидов.
-По умолчанию кло ищет файл *order.php*, находящийся в папке ленда. Если у вашей ПП скрипт называется по-другому, что переименуйте значение в переменной **$black_land_conversion_script**. Чтобы понять, как называется скрипт отправки, откройте индексный файл ленда и поищите любую форму - *<form*. Гляньте у формы атрибут *action*. В нём и прописан скрипт. Если атрибута *action* нет, значит лид отправляет индексный файл!
-Если скрипт находится в какой-то папке, то введите относительный путь к скрипту,например:
-`$black_land_conversion_script='folder/conversion.php';`
-После того, как вы это всё настроили, отправьте тестовый лид. Если лида нет в стате ПП, тогда откройте скрипт отправки лидов и поищите, нет ли в нём строки
-`exit();`
-Если есть, то удалите или закомментируйте эти строки (с учётом синтаксиса языка!!!).
-### Настройка страницы Спасибо.
-Посетитель попадает на страницу Спасибо после того, как он отправляет свои данные с блэка *или вайта*! Контент страницы подгружается из папки *thankyou* кло. Если посмотреть, в ней лежит несколько html-файлов, названных двухбуквенными кодами языков. Введите нужный язык страницы спасибо в  **$thankyou_page_language**.
+Em seguida, substitua **"Método de carregamento de destino"** por *Redirect*. Última etapa: preencha o endereço de redirecionamento.
+### Redirecionamento imediato
+Se você deseja apenas redirecionar todo o tráfego que passa pelos filtros clo, use **$black_action = *'redirect'*** e preencha o endereço de redirecionamento **$black_redirect_url**. Selecione também o tipo de redirecionamento: 301.302.303 ou 307. Pesquise no Google a diferença se isso for importante para você. Insira o tipo de redirecionamento em **$black_redirect_type**.
+### Configurando um script de conversão de destino local
+Cada landing tem a capacidade de enviar leads para PP (cap!). E cada PP tem sua própria mecânica de envio desses mesmos leads.
+Por padrão, clo procura o arquivo *order.php* localizado na pasta inicial. Se o seu script de software tiver um nome diferente, renomeie o valor na variável **$black_land_conversion_script**. Para entender como é chamado o script de envio, abra o arquivo de índice de destino e procure qualquer formulário - *<formulário*. Observe o atributo *action* do formulário. O roteiro está escrito nele. Se não houver nenhum atributo *action*, então o lead está enviando um arquivo de índice!
+Se o script estiver localizado em uma pasta, insira o caminho relativo para o script, por exemplo:
+`$black_land_conversion_script='pasta/conversion.php';`
+Depois de ter tudo configurado, envie um líder de teste. Se o lead não estiver na estatística PP, abra o script de envio do lead e procure a linha
+`sair();`
+Se houver, exclua ou comente essas linhas (levando em consideração a sintaxe da linguagem!!!).
+### Configuração da página Obrigado.
+O visitante chega à página de agradecimento depois de enviar seus dados em preto *ou branco*! O conteúdo da página é carregado da pasta *obrigado* clo. Se você olhar, ele contém vários arquivos html denominados códigos de idioma de duas letras. Insira o idioma desejado da página de agradecimento em **$thankyou_page_language**.
 
-Если для вашего языка нет страницы Спасибо - создайте её. Это просто: загружаем в браузере Chrome англоязычный вариант страницы Спасибо и встроенным переводчиком переводим на нужный язык. Далее сохраняем перевод под нужным именем, например *IT.html*.
-**Внимание**: откройте переведённую страницу в текстовом редакторе и убедитесь, что 2 макроса *{NAME}* and *{PHONE}* НЕ были переведены. Если были - верните их на место!
+Se não houver uma página de agradecimento para o seu idioma, crie uma. É simples: carregue a versão em inglês da página de agradecimento no navegador Chrome e use o tradutor integrado para traduzi-la para o idioma desejado. Em seguida, salve a tradução com o nome desejado, por exemplo *IT.html*.
+**Atenção**: Abra a página traduzida em um editor de texto e certifique-se de que as 2 macros *{NAME}* e *{PHONE}* NÃO foram traduzidas. Se houvesse, devolva-os ao seu lugar!
 
-Если вы хотите использовать свою собственную страницу Спасибо, то переименуйте её двухбуквенным кодом языка и положите все нужные файлы в папку *thankyou*.
-#### Сбор почт на странице Спасибо
-На странице Спасибо по умолчанию есть форма сбора email-адресов. Если она вам не нужна - просто удалите её  в коде страницы. Но если нужна, то вам нужно создать ещё одну страницу: ту, на которую пользователь попадёт ПОСЛЕ того, как оставит свою почту. Она должна быть названа в виде двухбуквенного названия языка + email.html. Например: *SKemail.html*. В папке *thankyou* лежит пример такой страницы.
+Se você quiser usar sua própria página de agradecimento, renomeie-a com um código de idioma de duas letras e coloque todos os arquivos necessários na pasta *obrigado*.
+#### Coletando correspondência na página de agradecimento
+Na página de agradecimento por padrão existe um formulário para coleta de endereços de e-mail. Caso não precise, basta removê-lo no código da página. Mas se necessário, então você precisa criar outra página: aquela para a qual o usuário irá DEPOIS de deixar seu e-mail. Deve ser nomeado como o nome de duas letras do idioma + email.html. Por exemplo: *SKemail.html*. Há um exemplo de tal página na pasta *obrigado*.
 
-## Настройка пикселей
-Вы можете добавить различные пиксели на ваши проклы и ленды. Вот полный список:
-- Яндекс Метрика
-- Google Tag Manager
-- Facebook Pixel
+## Configurações de pixels
+Você pode adicionar vários pixels aos seus anúncios e páginas de destino. Aqui está a lista completa:
+- Yandex Métrica
+- Gerenciador de tags do Google
+- Pixel do Facebook
 
-### Яндекс Метрика
-Чтобы добавить скрипт Яндекс Метрики на ваши прелендинги и лендинги, просто заполните ID метрики в **$ya_id**.
-### Google Tag Manager
-Чтобы добавить скрипт Google Tag Manager на ваши прелендинги и лендинги, просто заполните GTM ID в **$gtm_id**.
-### Facebook Pixel
-ID пикселя фб кло получает из ссылки. Он должен быть в ней в формате: *px=1234567890*. Например:
-`https://ваш.домен?px=5499284990`
-Если в адресе есть параметр *px*, тогда кло добавит полный Javascript-код пикселя фб на страницу Спасибо. Вы можете задать нужное событие пикселя в переменной **$fb_thankyou_event**. По умолчанию это *Lead*, но вы можете поменять его на *Purchase* или на любое другое.
-Вы также можете использовать событие *PageView*. Чтобы включить его, поменяйте **$fb_use_pageview** на *true*. После этого код пикселя будет добавлен на все основные страницы прокл и лендов и эти страницы будут слать событие *PageView* в фб для каждого посетителя.
-**Примечание:** Используйте плагин *Facebook Pixel Helper* для Google Chrome чтобы проверить, что события отсылаются корректно!
-## Настройка фильтров кло
-Кло умеет фильтровать траф по следующим критериям:
-- Встроенная база IP
-- ОС посетителя
-- Страна посетителя
-- User Agent посетителя (браузер)
-- ISP посетителя (провайдер)
-- Наличие реферера
-- По любой части ссылки, по которой был переход
+### Yandex Métrica
+Para adicionar o script Yandex Metrics às suas pré-landing pages e landing pages, basta preencher o ID da métrica em **$ya_id**.
+### Gerenciador de tags do Google
+Para adicionar o script do Gerenciador de tags do Google às suas pré-landing pages e landing pages, basta preencher o ID do GTM em **$gtm_id**.
+### Pixel do Facebook
+FB clo obtém o ID do pixel do link. Deve estar no formato: *px=1234567890*. Por exemplo:
+`https://seu.domínio?px=5499284990`
+Se o endereço contiver o parâmetro *px*, clo adicionará o código Javascript completo do pixel fb à página de agradecimento. Você pode definir o evento de pixel desejado na variável **$fb_thankyou_event**. Por padrão é *Lead*, mas você pode alterá-lo para *Purchase* ou qualquer outra coisa.
+Você também pode usar o evento *PageView*. Para habilitá-lo, altere **$fb_use_pageview** para *true*. Depois disso, o código do pixel será adicionado a todas as páginas principais e landing pages e essas páginas enviarão um evento *PageView* ao Facebook para cada visitante.
+**Observação:** Use o plug-in *Facebook Pixel Helper* para Google Chrome para verificar se os eventos são enviados corretamente!
+## Configurando filtros clo
+Klo pode filtrar o tráfego usando os seguintes critérios:
+- Base IP integrada
+- sistema operacional do visitante
+- País do visitante
+- Agente de usuário visitante (navegador)
+- ISP (provedor) do visitante
+- Disponibilidade de referenciador
+- Para qualquer parte do link que foi seguido
 
-*Примечание:* везде, где вы хотите использовать несколько параметров, используйте запятую в качестве разделителя!
-Для начала, добавьте все разрешённые операционные системы в **$os_white**. Вот список доступных:
-- Android
-- iOS
-- Windows
-- Linux
+*Nota:* Sempre que você quiser usar vários parâmetros, use uma vírgula como separador!
+Primeiro, adicione todos os sistemas operacionais permitidos a **$os_white**. Aqui está a lista dos disponíveis:
+-Android
+-iOS
+-Windows
+-Linux
 - OS X
-- и другие не особо популярные...
+- e outros não muito populares...
 
-Выберите те, что вам нужны.
-Затем заполните все двухбуквенные коды разрешённых стран в **$country_white**. Например: *RU,RS,IT,ES*. 
+Selecione os que você precisa.
+Em seguida, preencha todos os códigos de país de duas letras permitidos em **$country_white**. Por exemplo: *RU,RS,IT,ES*.
 
-Теперь избавьтесь от всех ненужных интернет-провайдеров. Добавьте их в **$isp_black**. Например: *google,facebook,yandex*. Если вы хотите защитить свою связку от спай-сервисом, то добавьте сюда всех облачных провайдеров, навроде: *amazon,azure* и т.п.
+Agora livre-se de todos os ISPs desnecessários. Adicione-os a **$isp_black**. Por exemplo: *google,facebook,yandex*. Se você deseja proteger seu pacote de serviços espiões, adicione todos os provedores de nuvem aqui, como: *amazon, azure*, etc.
 
-Добавьте в список запрещённых User Agent-ов **$ua_black** слова, по которым они будут фильтроваться. 
-Например: *facebook,Facebot,curl,gce-spider*
+Adicione palavras à lista de User Agents proibidos **$ua_black** pelos quais serão filtrados.
+Por exemplo: *facebook,Facebot,curl,gce-spider*
 
-Добавьте список слов, которые могут быть в ссылке, по которой перешёл посетитель, которые сигнализируют вам о том, что ему надо показать вайт в  **$tokens_black** или оставьте эту переменную пустой - ''.
+Adicione uma lista de palavras que podem estar no link que o visitante seguiu que sinalizam que ele precisa mostrar branco em **$tokens_black** ou deixe esta variável vazia - ''.
 
-Если у вас есть доп. список IP адресов от которых вы хотите избавиться - добавьте их в **$ip_black**.
+Se você tiver adicional lista de endereços IP dos quais você deseja se livrar - adicione-os a **$ip_black**.
 
-И наконец: если вы хотите блокировать *прямых* посетителей тогда измените **$block_without_referer** на *true*. **Внимание**: некоторые ОС и браузеры некорректно передают реферер или не передают его вовсе. Так что, если хотите  использовать эту фишку, проверьте её сначала на небольшом объёме трафа, иначе вы можете потерять $$.
+E finalmente: se você deseja bloquear visitantes *diretos*, altere **$block_without_referer** para *true*. **Atenção**: Alguns sistemas operacionais e navegadores não transferem o referenciador corretamente ou nem o transferem. Portanto, se você quiser usar esse truque, teste-o primeiro em uma pequena quantidade de tráfego, caso contrário, você poderá perder $$.
 
-## Настройка распределения трафа
-Вы можете временно выключить все фильтры кло и слать весь траф на вайт. Например, во время модерации. Для этого измените **$full_cloak_on** на *true*.
-Также вы можете выключить все фильтры кло и слать весь траф на блэк. Например, для тестирования блэка. Для этого измените **$disable_tds** на *true*.
-Вы можете сохранять "путь" пользователя (т.е. те преленды и ленды на которые он попадёт в воронке). Тогда он всегда, сколько бы раз он не зашёл, будет видеть одни и те же страницы. Для этого измените **$save_user_flow** на *true*.
-## Настройка статистики и постбэка
-Просмотр статистика защищён паролем. Задайте его в переменной **$log_password**.
-Если вы всегда называете свои креативы одинаково и передаёте их названия в кло из вашего источника трафа, то на странице статистики вы сможете посмотреть, сколько было кликов с того или иного крео. Для этого задайте название параметра в котором передаются имена крео в переменной **$creative_sub_name**. Например, если ссылка в источника трафа выглядит так:
-`https://your.domain?mycreoname=greatcreo`
-тогда вам нужно изменить переменную следующим образом:
-`$creative_sub_name = 'mycreoname';`
-после чего в стате вы увидите:
-*greatcreo - 154 клика*
-### Настройка постбэка
-Кло умеет получать постбэки из ПП и показывать статус лидов в стате. Для начала, вам надо передавать в ПП уникальный id посетителя - subid. Subid создаётся для каждого посетителя автоматом и хранится в куки. Вы должны спросить вашего менеджера, как передавать subid в ПП (они обычно знают этот параметр под именем clickid). Пусть они скажут вам, в какой суб-метке вам надо его передавать, потому что у разных ПП разные суб-метки. У кого-то они называются *sub1* *sub2* и т.д., а где-то *subacc*, где-то как-то ещё. Для примера представим, что суб-метка называется *sub1*. За передачу параметров в ПП отвечает массив **$sub_ids**. Изменим название справа от *subid* на *sub1*:
+## Configurando distribuição de tráfego
+Você pode desligar temporariamente todos os filtros clo e enviar todo o tráfego para branco. Por exemplo, durante a moderação. Para fazer isso, altere **$full_cloak_on** para *true*.
+Você também pode desligar todos os filtros clo e enviar todo o tráfego para preto. Por exemplo, para testar o preto. Para fazer isso, altere **$disable_tds** para *true*.
+Você pode salvar o “caminho” do usuário (ou seja, aqueles pré-landes e landing pages para os quais ele chega no funil). Então ele sempre verá, não importa quantas vezes faça login, as mesmas páginas. Para fazer isso, altere **$save_user_flow** para *true*.
+## Configurando estatísticas e postback
+A visualização das estatísticas é protegida por senha. Defina-o na variável **$log_password**.
+Se você sempre nomear seus criativos da mesma forma e transferir seus nomes para clo de sua origem de tráfego, na página de estatísticas você poderá ver quantos cliques houve de um determinado criativo. Para isso, defina o nome do parâmetro no qual são passados ​​os nomes dos creos na variável **$creative_sub_name**. Por exemplo, se o link na origem do tráfego for assim:
+`https://seu.domínio?meunome=greatcreo`
+então você precisa alterar a variável assim:
+`$creative_sub_name = 'meunome';`
+depois disso você verá no artigo:
+*ótimocreo - 154 cliques*
+### Configurando postback
+Klo pode receber postbacks do PP e mostrar o status dos leads nas estatísticas. Primeiro, você precisa transferir o ID exclusivo do visitante – subid – para o PP. O Subid é criado automaticamente para cada visitante e armazenado em cookies. Você deve perguntar ao seu gerente como passar o subid para o PP (eles geralmente conhecem esse parâmetro sob o nome clickid). Deixe-os dizer em qual subtag você precisa transferi-lo, porque PPs diferentes têm subtags diferentes. Para alguns eles são chamados de *sub1* *sub2*, etc., e em algum lugar *subacc*, em algum outro lugar. Por exemplo, vamos imaginar que o sub-rótulo se chama *sub1*. O array **$sub_ids** é responsável por passar parâmetros para o PP. Vamos mudar o nome à direita de *subid* para *sub1*:
 `$sub_ids = array("subid"=> "sub1", .....);`
-Так мы настраиваем кло взять значение куки *subid* и передать его в метку *sub1*. Если, скажем *subid* был *12uion34i2* в итоге получится:
-- если был локальный ленд, то во все формы ленда добавится скрытое input-поле
-`<input type="hidden" name="sub1" value="12uion34i2"`
-- если у нас редирект, то будет: `http://redirect.link?sub1=12uion34i2`
+É assim que configuramos o clo para pegar o valor do cookie *subid* e passá-lo para o rótulo *sub1*. Se, digamos, *subid* for *12uion34i2* o resultado será:
+- se houve um pouso local, um campo de entrada oculto será adicionado a todos os formulários de pouso
+`<tipo de entrada = "nome oculto" = "sub1" valor = "12uion34i2"`
+- se tivermos um redirecionamento, será: `http://redirect.link?sub1=12uion34i2`
 
-Далее нам надо указать в ПП, куда слать постбэк. В кло за обработку постбэков отвечает файл *postback.php*. Нам нужно получить из ПП 2 параметра: *subid* и статус лида. Используя две эти вещи кло меняет у себя в логах статус лида и отображает изменение в Статистике.
-Посмотрите в справке ПП или спросите вашего менеджера, какой макрос использует ПП для передачи статуса лида. Обычно он так и называется, *{status}*. Возвращаясь к нашему примеру: поскольку мы отправляли *subid* в суб-метке *sub1*, макрос для получения *subid* из ПП будет *{sub1}*. Давайте создадим полный адрес постбэка. Вы должны вставить его в поле Postback Url в вашей ПП. Например:
-`https://your.domain/postback.php?subid={sub1}&status={status}`
-И, наконец, разберитесь сами или спросите менеджера, какие статусы шлёт ПП в постбэке. Обычно это:
-- Lead
-- Purchase
-- Reject
-- Trash
+A seguir, precisamos indicar no PP para onde enviar o postback. Em clo, o arquivo *postback.php* é responsável por processar postbacks. Precisamos obter 2 parâmetros do PP: *subid* e status do lead. Usando essas duas coisas, clo altera o status do lead em seus logs e exibe a alteração nas estatísticas.
+Consulte a ajuda do PP ou pergunte ao seu gerente qual macro o PP usa para transferir o status do lead. Geralmente é chamado *{status}*. Voltando ao nosso exemplo: como enviamos *subid* no sub-rótulo *sub1*, a macro para obter *subid* do PP seria *{sub1}*. Vamos criar um endereço de postback completo. Você deve colá-lo no campo Postback Url do seu PP. Por exemplo:
+`https://seu.domínio/postback.php?subid={sub1}&status={status}`
+E por fim, descubra você mesmo ou pergunte ao gerente quais status o PP envia no postback. Geralmente isso é:
+-Liderar
+- Comprar
+-Rejeitar
+- Lixo
 
-Если ваша ПП шлёт статусы по-другому, то исправьте значения следующих переменных соответственно настройкам ПП:
+Caso o seu PP envie status de forma diferente, então corrija os valores das seguintes variáveis ​​de acordo com as configurações do PP:
 - **$lead_status_name**
 - **$purchase_status_name**
 - **$reject_status_name**
 - **$trash_status_name**
 
-После настройки отправьте тестового лида и на странице Лиды в статистике наблюдайте, как лид изменит статус на Треш.
+Após a configuração, envie um lead de teste e na página Leads nas estatísticas observe como o lead muda seu status para Lixo.
 
-## Настройка дополнительных скриптов
-### Отключение кнопки "Назад"
-Вы можете отключить кнопку "Назад" в браузере посетителя, чтобы он не мог покинуть вашу страницу. Для этого измените **$$disable_back_button** на *true*.
-### Замена кнопки "Назад"
-Вы можете изменить адрес, на который попадёт посетитель, нажав кнопку "Назад". Эту фишку можно использовать для домонетизации и для отправки посетителя на другой оффер. Изменяем **$replace_back_button** на *true* и вводим адрес в **$replace_back_address**.
-**Внимание:** Не используйте этот скрипт вместе со скриптом **Отключения кнопки Назад**!!!
-### Запрет контекстного меню, выделения текста и сохранения по Ctlr+S
-You can disable the ability to select text on your prelandings and landings, disable the ability to save the page using Ctrl+S keys and also disable the browser's context menu. To do so just change **$disable_text_copy** to *true*.
-### Замена прелендинга на другой сайт
-Вы можете включить эту настройку для того, чтобы ленд открывался в новой вкладке браузера, а прокла бы заменялась на другой сайт. Это можно использовать для домонетизации трафа. Для включения измените **$replace_prelanding** на *true* и вставьте адрес в **$replace_prelanding_address**.
-### Маски для телефонов
-Вы можете настроить кло так, чтобы он применяла к полям ввода номера телефона определённые маска. Когда вы включите эту возможность, посетитель не сможет вводить буквы в номер и не сможет ввести больше или меньше цифр, чем требуется. В маске задаются префиксы телефона, кол-во цифр и разделители. Чтобы включить маски измените **$black_land_use_phone_mask** на *true* и отредактируйте саму маску в **$black_land_phone_mask**.
-# Проверка
-Добавьте код вашей страны в список разрешённых, чтобы иметь возможность перейти на блэк. Пройдите по всем элементам воронки. Проверьте пиксель и отстукивание лидов в ПП, постбэк.
-# Просмотр трафика и статистики
-После того, как вы начали лить, вы можете просматривать стату по трафику на странице Статистика:
-`https://your.domain/logs?password=yourpassword`
-где *yourpassword* это значение переменной **$log_password** из файла *settings.php*.
-# JS-интеграция кло с конструкторами
-`<script src = 'https://your.domain/js/index.php'></script>`
-# Контакты
-По всем вопросам пишите Issues на GitHub либо в паблик http://vk.com/yellowweb
+## Configurando scripts adicionais
+### Desativando o botão Voltar
+Você pode desativar o botão Voltar no navegador do visitante para evitar que ele saia da sua página. Para fazer isso, altere **$$disable_back_button** para *true*.
+### Substituindo o botão "Voltar"
+Você pode alterar o endereço para onde o visitante será direcionado clicando no botão “Voltar”. Este recurso pode ser usado para pré-monetização e para direcionar o visitante para outra oferta. Altere **$replace_back_button** para *true* e insira o endereço em **$replace_back_address**.
+**Atenção:** Não use este script junto com o script **Desativar botão Voltar**!!!
+### Proibição do menu de contexto, seleção de texto e salvamento usando Ctlr+S
+Você pode desativar a capacidade de selecionar texto em seus pré-aterrissagens e landings, desativar a capacidade de salvar a página usando as teclas Ctrl+S e também desativar o menu de contexto do navegador. Para fazer isso basta alterar **$disable_text_copy** para *true*.
+### Substituindo a pré-landing page por outro site
+Você pode ativar essa configuração para que a página de destino seja aberta em uma nova guia do navegador e o site seja substituído por outro site. Isso pode ser usado para pré-monetizar o tráfego. Para ativar, altere **$replace_prelanding** para *true* e insira o endereço em **$replace_prelanding_address**.
+### Máscaras de telefone
+Você pode configurar o clone para aplicar determinadas máscaras aos campos de entrada de números de telefone. Ao ativar esse recurso, o visitante não poderá inserir letras no número e não poderá inserir mais ou menos números do que o necessário. A máscara especifica prefixos telefônicos, número de dígitos e separadores. Para ativar máscaras, altere **$black_land_use_phone_mask** para *true* e edite a própria máscara em **$black_land_phone_mask**.
+# Exame
+Adicione o código do seu país à lista de permitidos para poder mudar para preto. Analise todos os elementos do funil. Verifique o pixel e toque de leads no PP, postback.
+# Veja tráfego e estatísticas
+Depois de começar a despejar, você pode visualizar as estatísticas de tráfego na página Estatísticas:
+`https://seu.domínio/logs?password=suasenha`
+onde *yourpassword* é o valor da variável **$log_password** do arquivo *settings.php*.
+# Integração JS de clo com construtores
+`<script src = 'https://seu.domínio/js/index.php'></script>`
+# Contatos
+Para qualquer dúvida, escreva Issues no GitHub ou na página pública http://vk.com/yellowweb
 
-# Description
-Modified cloaking script for affiliate marketing found somewhere on [Black Hat World](http://blackhatworld.com).
-If you like this software, [please donate a few bucks using this Telegram bot!](https://t.me/yellowwebdonate_bot)
-# Installation
-Just download the latest copy of all files from this repository and upload them to your hosting. Your hosting should allow to run PHP-scripts and you SHOULD create a HTTPS-certificate for your domain. **Without HTTPS the cloaker won't work properly!** I can definitely [recommend Beget Hosting for the cloaker](https://yellowweb.top/beget). It's cheap and convenient.
+# Descrição
+Script de cloaking modificado para marketing de afiliados encontrado em algum lugar no [Black Hat World](http://blackhatworld.com).
+Se você gosta deste software, [doe alguns dólares usando este bot do Telegram!](https://t.me/yellowwebdonate_bot)
+# Instalação
+Basta baixar a cópia mais recente de todos os arquivos deste repositório e carregá-los em sua hospedagem. Sua hospedagem deve permitir a execução de scripts PHP e você DEVE criar um certificado HTTPS para o seu domínio. **Sem HTTPS o cloaker não funcionará corretamente!** Definitivamente posso [recomendar Beget Hosting para o cloaker](https://yellowweb.top/beget). É barato e conveniente.
 
-If you have local prelandings or landings, then create a folder for each of them in the root folder of the cloaker and copy all files there accordingly. 
-*For example:*
-If you have 2 prelandings and 2 landings create 2 folders for prelandings: p1 and p2. And 2 folders for landings: land1, land2.  
+Se você tiver pré-desembarques ou desembarques locais, crie uma pasta para cada um deles na pasta raiz do cloaker e copie todos os arquivos lá de acordo.
+*Por exemplo:*
+Se você tiver 2 pré-desembarques e 2 desembarques, crie 2 pastas para pré-desembarques: p1 e p2. E 2 pastas para pousos: land1, land2.
 
-# Setup
-Right now the cloaker doesn't have any UI for the settings. So, just open the settings.php file in any text-editor. I recommend Notepad++ for that, cause it has PHP-syntax highlighting and it'll be easier to read and edit.
+#Configurar
+No momento, o cloaker não possui nenhuma interface de usuário para as configurações. Então, basta abrir o arquivo settings.php em qualquer editor de texto. Eu recomendo o Notepad++ para isso, pois ele possui destaque de sintaxe PHP e será mais fácil de ler e editar.
 
-## White Page Setup
-White Page is a page that is shown to the visitor, which doesn't pass any of the cloaker's filters. So, it is for visitors, that we don't want.
+## Configuração da página em branco
+White Page é uma página que é mostrada ao visitante, que não passa por nenhum filtro do cloaker. Então é para visitantes que a gente não quer.
 
-First of all you need to decide, what kind of a white page action you want to use. The cloaker can use local whitepages, it can show any other site as a whitepage (without redirects), it can redirect white-traffic to any website and it can also show an error to such visitors.
+Primeiro, você precisa decidir que tipo de ação de página branca você quer usar. O cloaker pode usar páginas brancas locais, pode mostrar qualquer outro site como uma página branca (sem redirecionamentos), pode redirecionar tráfego branco para qualquer site e também pode mostrar um erro para esses visitantes.
 
-When you decided, change the **$white_action** value to one of the following:
+Quando você decidir, altere o valor **$white_action** para um dos seguintes:
 ### site
-This is for local whitepages. You need to create a folder in the root directory of the cloaker, for example: *white* and copy all of your whitepage's files there. Then write the folder name into **$white_folder_name** value. 
+Isto é para páginas brancas locais. Você precisa criar uma pasta no diretório raiz do cloaker, por exemplo: *white* e copiar todos os arquivos da sua página branca para lá. Então escreva o nome da pasta no valor **$white_folder_name**.
 ### redirect
-Choose this, if you want to redirect all of the white traffic. Just enter the full website url into **$white_redirect_url** and also choose a redirect type. It can be 301,302,303 or 307. Google the difference if you need. Enter the value into **$white_redirect_type**.
+Escolha isto, se você quiser redirecionar todo o tráfego branco. Basta digitar a URL completa do site em **$white_redirect_url** e também escolher um tipo de redirecionamento. Pode ser 301,302,303 ou 307. Pesquise a diferença no Google se precisar. Insira o valor em **$white_redirect_type**.
 ### curl
-Use it, if you want to load any other's site content on your domain without redirects. Enter full website's url into **$white_curl_url**.
+Use-o se quiser carregar o conteúdo de qualquer outro site em seu domínio sem redirecionamentos. Insira a URL completa do site em **$white_curl_url**.
 ### error
-You can return any type of HTTP-errors for all of the white-traffic. For example: *404*. Just enter the error code into **$white_error_code**.
+Você pode retornar qualquer tipo de erro HTTP para todo o tráfego branco. Por exemplo: *404*. Basta inserir o código de erro em **$white_error_code**.
 
-## Domain Specific White Pages
-If you have MULTIPLE domains (or subdomains) parked to your hosting, and you run traffic for all of them, you can choose to use different white actions for different domains. To do it first of all change **$white_use_domain_specific** to *true*.
+## Páginas brancas específicas de domínio
+Se você tiver VÁRIOS domínios (ou subdomínios) estacionados em sua hospedagem e executar tráfego para todos eles, poderá escolher usar diferentes ações brancas para diferentes domínios. Para fazer isso, primeiro altere **$white_use_domain_specific** para *true*.
 
-Then fill **$white_domain_specific** array. The fomat is like this
+Em seguida, preencha o array **$white_domain_specific**. O formato é assim
 `"your.domain" => "whiteaction:value"`
-An example is provided in the default settings.php file.
-## Money Page Setup
-Money page (called Black page here) can be one of the following:
-- local landing page(s)
-- local prelanding(s) + local landing(s)
-- local prelanding(s) + redirect to the aff network's landing
-- redirect
+Um exemplo é fornecido no arquivo settings.php padrão.
+## Configuração da página Money
+A página Money (chamada de Black page aqui) pode ser uma das seguintes:
+- landing page(s) local(ais)
+- prelanding(s) local(ais) + landing(s) local(ais)
+- prelanding(s) local(ais) + redirecionamento para a landing da rede aff
+- redirecionamento
 
-Let's dive into each of these configurations.
-### Local landing page(s)
-You can use one ore multiple landing pages if you need. The traffic will be distributed proportionally. For example 50-50 for 2 landings. Each landing should be in a separate folder. Make **$black_action = *'site'*** and put the folder name into **$black_land_folder_name**. In case of mutiple landings use comma as a separator. For example:
+Vamos mergulhar em cada uma dessas configurações.
+### Landing page(s) local(ais)
+Você pode usar uma ou várias landing pages se precisar. O tráfego será distribuído proporcionalmente. Por exemplo, 50-50 para 2 landings. Cada landing deve estar em uma pasta separada. Faça **$black_action = *'site'*** e coloque o nome da pasta em **$black_land_folder_name**. No caso de landings múltiplos, use vírgula como separador. Por exemplo:
 `$black_land_folder_name = 'land1,land2';`
-*Note:* be sure to check, that you don't have anything in **$black_preland_folder_name**. It should be:
+*Observação:* certifique-se de verificar se você não tem nada em **$black_preland_folder_name**. Deve ser:
 `$black_preland_folder_name = ''; `
-### Local prelanding(s) + local landing(s)
-Do everything the same as in the description for **Local landing page** but also fill the **$black_preland_folder_name**. For example, for two prelandings:
+### Pré-aterrissagem(ões) local(ais) + aterrissagem(ões) local(ais)
+Faça tudo igual à descrição para **Página de aterrissagem local**, mas também preencha o **$black_preland_folder_name**. Por exemplo, para duas aterrissagens:
 `$black_preland_folder_name = 'p1,p2';`
-### Local prelanding(s) + redirect
-Fill the **$black_preland_folder_name**. For example, for two prelandings:
+### Pré-aterrissagem(ões) local(ais) + redirecionamento
+Preencha o **$black_preland_folder_name**. Por exemplo, para duas aterrissagens:
 `$black_preland_folder_name = 'p1,p2';`
-Then change **$black_land_use_url** to *true*. Last step: put full redirect url int **$black_land_url**
-### Redirect
-If you just want to redirect all of your black traffic, then use **$black_action = *'redirect'*** and put the full url of the website, where you want to redirect people into **$black_redirect_url**. Also choose a redirect type. It can be 301,302,303 or 307. Google the difference if you need. Enter the value into **$black_redirect_type**.
-### Setting up the local landing's conversion script
-Each landing page has an ability to send leads to your affiliate network. And each affiliate network, that provide you these landings has their own script and mechanics for sending this info.
-By default the cloaker will look for the *order.php* file, that should be located in the landing's folder. But if your script has a different name, then you should rename the value of **$black_land_conversion_script**. If your script is in some folder, the put this folder name before the script name like this:
+Então altere **$black_land_use_url** para *true*. Última etapa: coloque a URL de redirecionamento completa int **$black_land_url**
+### Redirecionar
+Se você quiser apenas redirecionar todo o seu tráfego preto, use **$black_action = *'redirect'*** e coloque a URL completa do site para onde você quer redirecionar as pessoas **$black_redirect_url**. Escolha também um tipo de redirecionamento. Pode ser 301,302,303 ou 307. Pesquise a diferença no Google se precisar. Insira o valor em **$black_redirect_type**.
+### Configurando o script de conversão da landing page local
+Cada landing page tem a capacidade de enviar leads para sua rede de afiliados. E cada rede de afiliados que fornece essas landing pages tem seu próprio script e mecânica para enviar essas informações.
+Por padrão, o cloaker procurará o arquivo *order.php*, que deve estar localizado na pasta da landing. Mas se seu script tiver um nome diferente, você deve renomear o valor de **$black_land_conversion_script**. Se o seu script estiver em alguma pasta, coloque o nome desta pasta antes do nome do script assim:
 `$black_land_conversion_script='folder/conversion.php';`
-After setting this up send a test lead to your aff network. If you can't see the lead in you network's statistics, then open your conversion script and look for these kind of lines:
+Após configurar isso, envie um lead de teste para sua rede aff. Se você não conseguir ver o lead nas estatísticas da sua rede, abra seu script de conversão e procure por este tipo de linha:
 `exit();`
-Remove or comment all of them. Then send a test lead again.
-### Setting up the "Thank you" page
-Thankyou page is a page, where the visitor is redirected after filling the lead form on you black landing OR on your whitepage (if you have one there). Thankyou page's content is loaded from the *thankyou* folder of the cloaker. It has several html-files there, named after the 2-symbol language code. Put the name of your required language into **$thankyou_page_language**. 
+Remova ou comente todas elas. Em seguida, envie um lead de teste novamente.
+### Configurando a página "Obrigado"
+A página de agradecimento é uma página para onde o visitante é redirecionado após preencher o formulário de lead em sua black landing OU em sua whitepage (se você tiver uma lá). O conteúdo da página de agradecimento é carregado da pasta *thankyou* do cloaker. Ela tem vários arquivos html lá, nomeados após o código de idioma de 2 símbolos. Coloque o nome do idioma necessário em **$thankyou_page_language**.
 
-If there is no thankyou page for your language - create one! It is as easy as loading for example *EN.html* into your Chrome browser, translating it using the built-in Google Translate and then saving it using your language code. For example: *IT.html*. 
-**Warning**: make sure that two macros: *{NAME}* and *{PHONE}* were not translated by Google. If they were, just change them back.
+Se não houver uma página de agradecimento para seu idioma - crie uma! É tão fácil quanto carregar, por exemplo, *EN.html* em seu navegador Chrome, traduzi-lo usando o Google Translate integrado e salvá-lo usando seu código de idioma. Por exemplo: *IT.html*.
+**Aviso**: certifique-se de que duas macros: *{NAME}* e *{PHONE}* não foram traduzidas pelo Google. Se foram, basta alterá-las de volta.
 
-If you want to use your own thankyou page - just rename it using the same 2-symbol language code to the required language and put all its files into *thankyou* folder.
-#### Collecting emails on the "Thank you" page
-The default thankyou page has a built in email collect form. If you dont' need it - just delete it in code. But if you do, you need to create one more page: the one that the visitor will be redirected AFTER submitting the email form. It should be called using the same 2-symbols language code+email in the end. For example: *SKemail.html*.
+Se você quiser usar sua própria página de agradecimento, basta renomeá-la usando o mesmo código de idioma de 2 símbolos para o idioma necessário e colocar todos os seus arquivos na pasta *thankyou*.
+#### Coletando e-mails na página "Obrigado"
+A página de agradecimento padrão tem um formulário de coleta de e-mail integrado. Se você não precisar dele, basta excluí-lo do código. Mas se precisar, você precisa criar mais uma página: aquela para a qual o visitante será redirecionado DEPOIS de enviar o formulário de e-mail. Ela deve ser chamada usando o mesmo código de idioma de 2 símbolos + e-mail no final. Por exemplo: *SKemail.html*.
 
-## Pixels Setup
-You can add various pixels on your prelandings and landings. Full list includes:
+## Configuração de pixels
+Você pode adicionar vários pixels em seus prelandings e landings. A lista completa inclui:
 - Yandex Metrika
 - Google Tag Manager
 - Facebook Pixel
 
 ### Yandex Metrika
-To add Yandex Metrika's script to your prelandings and landings just fill your Yandex Metrika id. Put it into **$ya_id**.
-### Google Tag Manager
-To add the Google Tag Manager's script to your prelandings and landings just fill your GTM id. Put it into **$gtm_id**.
-### Facebook Pixel
-Facebook Pixel's id is taken from the link, that you put into your traffic source. It should be in format *px=1234567890*. For example:
-`https://your.domain?px=5499284990`
-If the url has this *px* parameter, then the full javascript code of the Facebook Pixel will be added to the Thankyou page. You can set the Facebook Pixel's event in **$fb_thankyou_event** variable. By default it is *Lead* but you can change it to *Purchase* or anything that you need.
-You can also use the pixel's *PageView* event. To do so, change **$fb_use_pageview** to *true*. If you do so, then the pixel's code will be added to all of your local prelandings and landings and they will send the *PageView* event for each visitor to Facebook.
-Use Facebook Pixel Helper plugin for Google Chrome to check, if the pixel's event fire correctly!
-## Cloaker's Filters Setup
-The cloaker can filter traffic based on:
-- Built in IP database
-- Visitor's OS
-- Visitor's country
-- Visitor's User Agent
-- Visitor's ISP
-- Visitor's referer
-- Any token in the url
+Para adicionar o script do Yandex Metrika aos seus prelandings e landings, basta preencher seu ID do Yandex Metrika. Coloque-o em **$ya_id**.
+### Gerenciador de tags do Google
+Para adicionar o script do Gerenciador de tags do Google aos seus prelandings e landings, basta preencher seu ID do GTM. Coloque-o em **$gtm_id**.
+### Pixel do Facebook
+O ID do Pixel do Facebook é obtido do link que você colocou na sua fonte de tráfego. Ele deve estar no formato *px=1234567890*. Por exemplo:
+`https://seu.domínio?px=5499284990`
+Se a URL tiver este parâmetro *px*, o código javascript completo do Pixel do Facebook será adicionado à página de agradecimento. Você pode definir o evento do Pixel do Facebook na variável **$fb_thankyou_event**. Por padrão, é *Lead*, mas você pode alterá-lo para *Purchase* ou qualquer coisa que precisar.
+Você também pode usar o evento *PageView* do pixel. Para fazer isso, altere **$fb_use_pageview** para *true*. Se você fizer isso, o código do pixel será adicionado a todos os seus prelandings e landings locais e eles enviarão o evento *PageView* para cada visitante do Facebook.
+Use o plugin Facebook Pixel Helper para Google Chrome para verificar se o evento do pixel dispara corretamente!
+## Configuração dos filtros do Cloaker
+O cloaker pode filtrar o tráfego com base em:
+- Banco de dados de IP integrado
+- SO do visitante
+- País do visitante
+- Agente do usuário do visitante
+- ISP do visitante
+- Referente do visitante
+- Qualquer token na URL
 
-*Note:* comma should be used everywhere, where multiple values are needed.
-First of all put all of the OSes that should be allowed to view the black page into **$os_white**. The full list is:
+*Observação:* a vírgula deve ser usada em todos os lugares onde vários valores são necessários.
+Primeiro, coloque todos os sistemas operacionais que devem ter permissão para visualizar a página preta em **$os_white**. A lista completa é:
 - Android
 - iOS
 - Windows
 - Linux
 - OS X
-- and some non-significant others
+- e alguns outros não significativos
 
-Choose any that you need. 
-Then put all the country codes that are allowed into **$country_white**. For example: *RU,RS,IT,ES*. 
+Escolha qualquer um que você precisar.
+Em seguida, coloque todos os códigos de país que são permitidos em **$country_white**. Por exemplo: *RU,RS,IT,ES*.
 
-Now get rid of all of the Internet Service Providers that you don't need. Put them into **$isp_black**. For example: *google,facebook,yandex*. If you want to protect your landings from Spy services use *amazon,azure* and other cloud-providers here.
+Agora livre-se de todos os provedores de serviços de Internet dos quais você não precisa. Coloque-os em **$isp_black**. Por exemplo: *google,facebook,yandex*. Se você quiser proteger seus landings de serviços Spy, use *amazon,azure* e outros provedores de nuvem aqui.
 
-Put all the unnecessary User Agents into **$ua_black**. 
-For example: *facebook,Facebot,curl,gce-spider*
+Coloque todos os User Agents desnecessários em **$ua_black**.
+Por exemplo: *facebook,Facebot,curl,gce-spider*
 
-Put all of the words, that can be found in the url that signal you, that this visitor should be shown the white page into **$tokens_black** or leave it empty.
+Coloque todas as palavras que podem ser encontradas na URL que sinalizam que este visitante deve ver a página branca em **$tokens_black** ou deixe-a vazia.
 
-If you have any additional IP addresses that you want to get rid of - put them into **$ip_black**.
+Se você tiver algum endereço IP adicional do qual deseja se livrar, coloque-o em **$ip_black**.
 
-And last but not least: if you want to block *direct* visitors from seeing your black page, then change **$block_without_referer** to *true*. **Warning**: some OSes and browsers don't pass the referer correctly, so test this first on a small amount of traffic or you'll loose money.
+E por último, mas não menos importante: se você quiser bloquear visitantes *diretos* de ver sua página preta, altere **$block_without_referer** para *true*. **Aviso**: alguns sistemas operacionais e navegadores não passam o referenciador corretamente, então teste isso primeiro em uma pequena quantidade de tráfego ou você perderá dinheiro.
 
-## Traffic Distibution Setup
-You can temporary disable all of your filters and send all traffic to the whitepage. For example, you can use it for moderation. To do so, change **$full_cloak_on** to *true*.
-You can also disable the filters and always show the blackpage. For example, for testing purposes. To do so change **$disable_tds** to *true*.
-You can save the user's flow (the prelandings and the landgins which will be shown to the visitor) so (s)he will always see the same pages when (s)he visits the site for the second time or even just refreshes the page. To do so, change **$save_user_flow** to *true*.
-## Statistics and Postback Setup
-Your statistics is protected with a password, to set it, please fill the **$log_password** variable.
-If you name your creatives properly and pass their names from the traffic source, you can see the number of clicks for each of the creative in the Statistics. To do so, please put the parameter name in which you pass the creative name into **$creative_sub_name** variable. For example, if you link looks like this:
+## Configuração de Distribuição de Tráfego
+Você pode desabilitar temporariamente todos os seus filtros e enviar todo o tráfego para a página branca. Por exemplo, você pode usá-lo para moderação. Para fazer isso, altere **$full_cloak_on** para *true*.
+Você também pode desabilitar os filtros e sempre mostrar a página preta. Por exemplo, para fins de teste. Para fazer isso, altere **$disable_tds** para *true*.
+Você pode salvar o fluxo do usuário (os prelandings e os landgins que serão mostrados ao visitante) para que ele sempre veja as mesmas páginas quando visitar o site pela segunda vez ou até mesmo atualizar a página. Para fazer isso, altere **$save_user_flow** para *true*.
+## Configuração de Estatísticas e Postback
+Suas estatísticas são protegidas com uma senha, para defini-la, preencha a variável **$log_password**.
+Se você nomear seus criativos corretamente e passar seus nomes da fonte de tráfego, você pode ver o número de cliques para cada um dos criativos nas Estatísticas. Para fazer isso, coloque o nome do parâmetro no qual você passa o nome criativo na variável **$creative_sub_name**. Por exemplo, se seu link se parece com isso:
 `https://your.domain?mycreoname=greatcreo`
-then you need to do it like this:
+então você precisa fazer assim:
 `$creative_sub_name = 'mycreoname';`
-### Postback setup
-The cloaker is able to receive postbacks from your aff network. To do so, first of all you need to pass the unique visitor's id (called subid here) to your network. Subid is created for each visitor and is stored in a cookie. You should ask your aff manager, how should you pass this id (they know it as "clickid") and what sub-parameter should you use. Usually it is done using sub-parameters like *sub1* or *subacc*. Let's stick to *sub1* for this example. So, we should edit the **$sub_ids** array, the part, that has *subid* on the left side to look like this:
+### Configuração de postback
+O cloaker é capaz de receber postbacks da sua rede aff. Para fazer isso, primeiro você precisa passar o id do visitante único (chamado de subid aqui) para sua rede. O subid é criado para cada visitante e é armazenado em um cookie. Você deve perguntar ao seu gerente aff, como você deve passar esse id (eles o conhecem como "clickid") e qual subparâmetro você deve usar. Normalmente, isso é feito usando subparâmetros como *sub1* ou *subacc*. Vamos ficar com *sub1* para este exemplo. Então, devemos editar o array **$sub_ids**, a parte que tem *subid* no lado esquerdo para ficar assim:
 `$sub_ids = array("subid"=> "sub1", .....);`
-This way we tell the cloaker to take the value of *subid* and add it to all forms on the landing in the form of *sub1* (or add it to your redirect link, if you don't have local landing). So if the *subid* was *12uion34i2* we will have:
-- in case of local landing
+Dessa forma, dizemos ao cloaker para pegar o valor de *subid* e adicioná-lo a todos os formulários na landing na forma de *sub1* (ou adicioná-lo ao seu link de redirecionamento, se você não tiver uma landing local). Então, se o *subid* fosse *12uion34i2*, teríamos:
+- no caso de landing local
 `<input type="hidden" name="sub1" value="12uion34i2"`
-- in case of redirect `http://redirect.link?sub1=12uion34i2`
+- no caso de redirecionamento `http://redirect.link?sub1=12uion34i2`
 
-Now we need to tell the aff network where to send the postback info. The cloaker has *postback.php* file in its root folder. It is the file, which receives and processes postbacks. We need to receive 2 parameters from the aff network: *subid* and lead status. Using this two things we can change the lead status in our logs and show this change in statistics.
-Look in help or ask your manager: what macros does your network use to send *status*, usually it is called the same: *{status}*. So, returning to our example: we sent *subid* in *sub1* so the macros to receive back our *subid* will be *{sub1}*. Let's create a full postback url. You should put this url in the Postback field of your Aff Network. For example:
+Agora precisamos dizer à rede aff para onde enviar as informações de postback. O cloaker tem o arquivo *postback.php* em sua pasta raiz. É o arquivo que recebe e processa postbacks. Precisamos receber 2 parâmetros da rede aff: *subid* e status do lead. Usando essas duas coisas, podemos alterar o status do lead em nossos logs e mostrar essa alteração nas estatísticas.
+Procure na ajuda ou pergunte ao seu gerente: quais macros sua rede usa para enviar *status*, geralmente é chamado da mesma forma: *{status}*. Então, voltando ao nosso exemplo: enviamos *subid* em *sub1*, então as macros para receber de volta nosso *subid* serão *{sub1}*. Vamos criar uma URL de postback completa. Você deve colocar essa URL no campo Postback da sua rede Aff. Por exemplo:
 `https://your.domain/postback.php?subid={sub1}&status={status}`
-Now, ask your aff manager or look in their help section, what are the statuses, that they send us in postback. Usually they are:
+Agora, pergunte ao seu gerente aff ou procure na seção de ajuda deles, quais são os status que eles nos enviam no postback. Geralmente eles são:
 - Lead
 - Purchase
 - Reject
 - Trash
 
-If your aff network uses other statuses then change these variable values accordingly:
+Se sua rede aff usa outros status, então altere esses valores de variáveis ​​de acordo:
 - **$lead_status_name**
 - **$purchase_status_name**
 - **$reject_status_name**
 - **$trash_status_name**
 
-After setting this up send a test lead and watch on the Leads page how the status changes to *Trash* after a while.
+Depois de configurar isso, envie um lead de teste e observe na página Leads como o status muda para *Trash* depois de um tempo.
 
-## Additional Scripts Setup
-### Disable Back Button
-You can disable the back button in the visitor's browser, so (s)he can't leave your page. To do so change **$$disable_back_button** to *true*.
-### Replace Back Button
-You can replace the url of the back button in the visitor's browser. So after (s)he clicks on it, (s)he will be redirected to some other place, for example to another offer. To do so change **$replace_back_button** to *true* and put the url that you want into **$replace_back_address**.
-**Warning:** Don't use this script with **Disable Back Button** script!!!
-### Disable Text Selection, Ctrl+S and Context Menu
-You can disable the ability to select text on your prelandings and landings, disable the ability to save the page using Ctrl+S keys and also disable the browser's context menu. To do so just change **$disable_text_copy** to *true*.
-### Replacing Prelanding
-You can make the cloaker to open the landing page in a separate browser's tab and then redirect the tab with the prelanding to another url. After the user closes your landing page tabe (s)he'll see the tab with this url. Use it to show another offer to the user. To do so change **$replace_prelanding** to *true* and put your url into **$replace_prelanding_address**.
-### Phone Masks
-You can tell the cloaker to use masks for the phone field on your local landings. When you do so, the visitor won't be able to add any letters into the phone field, only numbers. The mask defines numbers count and delimeters. To enable masks just change **$black_land_use_phone_mask** to *true* and edit your mask in **$black_land_phone_mask**.
+
+## Configuração de scripts adicionais
+### Desabilitar botão Voltar
+Você pode desabilitar o botão Voltar no navegador do visitante, para que ele não possa sair da sua página. Para fazer isso, altere **$$disable_back_button** para *true*.
+### Substituir botão Voltar
+Você pode substituir a URL do botão Voltar no navegador do visitante. Assim, depois que ele clicar nele, ele será redirecionado para outro lugar, por exemplo, para outra oferta. Para fazer isso, altere **$replace_back_button** para *true* e coloque a URL que você deseja em **$replace_back_address**.
+**Aviso:** Não use este script com o script **Desabilitar botão Voltar**!!!
+### Desabilitar seleção de texto, Ctrl+S e menu de contexto
+Você pode desabilitar a capacidade de selecionar texto em suas pré-aterrissagens e aterrissagens, desabilitar a capacidade de salvar a página usando as teclas Ctrl+S e também desabilitar o menu de contexto do navegador. Para fazer isso, basta alterar **$disable_text_copy** para *true*.
+### Substituindo Prelanding
+Você pode fazer o cloaker abrir a landing page em uma aba separada do navegador e então redirecionar a aba com o prelanding para outra url. Depois que o usuário fechar sua aba de landing page, ele verá a aba com essa url. Use-a para mostrar outra oferta ao usuário. Para fazer isso, altere **$replace_prelanding** para *true* e coloque sua url em **$replace_prelanding_address**.
+### Máscaras de telefone
+Você pode dizer ao cloaker para usar máscaras para o campo de telefone em suas landings locais. Quando você fizer isso, o visitante não poderá adicionar nenhuma letra no campo de telefone, apenas números. A máscara define a contagem de números e delimitadores. Para habilitar máscaras, basta alterar **$black_land_use_phone_mask** para *true* e editar sua máscara em **$black_land_phone_mask**.
 # Check Up
-Add your own country to the cloaker's filters to be able to see the black page. Then go through all of the funnel's components. Send a test lead, verify that it reached your aff network.
-# Running traffic and Statistics
-After you started running traffic you can monitor it and also look at the statistics. To do so just go to a link like this:
+Adicione seu próprio país aos filtros do cloaker para poder ver a página negra. Em seguida, passe por todos os componentes do funil. Envie um lead de teste, verifique se ele chegou à sua rede aff.
+# Tráfego em execução e estatísticas
+Depois de começar a executar o tráfego, você pode monitorá-lo e também olhar as estatísticas. Para fazer isso, basta acessar um link como este:
 `https://your.domain/logs?password=yourpassword`
-where *yourpassword* is a value of **$log_password** from the settings.php file.
+onde *yourpassword* é um valor de **$log_password** do arquivo settings.php.
 
-# Javascript Integration
-You can connect this cloaker to any website or website-builder that allows adding Javascript. For example: *GitHub, Wix, Shopify* and so on.
-When you do so you run traffic to the website-builder and after the visitor comes to this site a little script checks, if (s)he is allowed to view the blackpage. If (s)he is, then 2 things can happen:
-- A redirect to your blackpage
-- Website builder's content is replaced by the blackpage
+# Integração Javascript
+Você pode conectar este cloaker a qualquer site ou construtor de sites que permita adicionar Javascript. Por exemplo: *GitHub, Wix, Shopify* e assim por diante.
+Quando você faz isso, você executa o tráfego para o construtor de sites e depois que o visitante chega a este site, um pequeno script verifica se ele tem permissão para visualizar a página negra. Se (ele) estiver, então 2 coisas podem acontecer:
+- Um redirecionamento para sua blackpage
+- O conteúdo do construtor de sites é substituído pela blackpage
 
-## Redirect
-Just add this script to your website builder:
+## Redirecionamento
+Basta adicionar este script ao seu construtor de sites:
 `<script src="https://your.domain/js/indexr.php"></script>`
 
-## Content replacing
-Just add this script to your website builder:
+## Conteúdo substituindo
+Basta adicionar este script ao seu construtor de sites:
 `<script src="https://your.domain/js"></script>`
-Don't use this method if you have only landings without prelandings!
-# Technical Details
-## Used components
-This cloaker uses:
-- MaxMind Databases for ISP, Country and City detection
-- Bot IP Ranges from various sources collected all over from the Internet in CIDR format
-- Sinergi BrowserDetector for (surprise!) browser detection
-- IP Utils from Symphony for checking if the IP address is in a selected range
-- Icons from https://www.flaticon.com/free-icons/question
+Não use este método se você tiver apenas landings sem prelandings!
+# Detalhes técnicos
+## Componentes usados
+Este cloaker usa:
+- Bancos de dados MaxMind para detecção de ISP, país e cidade
+- Faixas de IP de bot de várias fontes coletadas de toda a Internet em formato CIDR
+- Sinergi BrowserDetector para (surpresa!) detecção de navegador
+- IP Utils do Symphony para verificar se o endereço IP está em um intervalo selecionado
+- Ícones de https://www.flaticon.com/free-icons/question
 
-## Traffic flow
-After the visitor passes the cloaker's filters he is usually shown the prelanding (if you have one). On the prelanding all links are being replaced by the link to the *landing.php* script. After the visitor clicks on the link, the *landing.php* script gets the landing's content, replaces action of all of the forms to *send.php*, adds all additional scripts and shows the content to the visitor. When the visitor fills the form and sends it *send.php* calls the original send script and then removes all of the redirects from it. After that *send.php* redirects to the *thankyou.php* which shows the thankyou page as described in the sections above.
+## Fluxo de tráfego
+Depois que o visitante passa pelos filtros do cloaker, ele geralmente vê o prelanding (se você tiver um). No prelanding, todos os links estão sendo substituídos pelo link para o script *landing.php*. Depois que o visitante clica no link, o script *landing.php* obtém o conteúdo do landing, substitui a ação de todos os formulários para *send.php*, adiciona todos os scripts adicionais e mostra o conteúdo ao visitante. Quando o visitante preenche o formulário e o envia, *send.php* chama o script de envio original e então remove todos os redirecionamentos dele. Depois disso, *send.php* redireciona para *thankyou.php* que mostra a página de agradecimento conforme descrito nas seções acima.
