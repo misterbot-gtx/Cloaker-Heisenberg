@@ -27,7 +27,7 @@ Um script de camuflagem modificado para arbitragem de tráfego, originalmente en
 - [ÚLTIMA stream em que TODA a interface gráfica do clo é desmontada](https://youtu.be/-ikmpq-L8ZE)
 - [Stream em que o clo é analisado detalhadamente com todas as funções](https://www.youtube.com/watch?v=XMua15r2dwg&feature=youtu.be)
 - [Vídeo com uma visão geral dos novos recursos aqui.](https://www.youtube.com/watch?v=x-Z2Y4lEOc0&t=656s)
-- [Descrição das configurações para as primeiras versões aqui!](https://yellowweb.top/%d0%ba%d0%bb%d0%be%d0%b0%d0%ba%d0%b8%d0%bd% d0%b3 -%d0%b4%d0%bb%d1%8f-%d0%b1%d0%b5%d0%b4%d0%bd%d0%be%d0%b3%d0%be-%d0%bd %d0% be-%d1%83%d0%bc%d0%bd%d0%be%d0%b3%d0%be-%d0%b0%d1%80%d0%b1%d0%b8%d1%82 %d1% 80/)
+- [Descrição das configurações para as primeiras versões aqui!](https://yellowweb.top/%d0%ba%d0%bb%d0%be%d0%b0%d0%ba%d0%b8%d0%bd%d0%b3-%d0%b4%d0%bb%d1%8f-%d0%b1%d0%b5%d0%b4%d0%bd%d0%be%d0%b3%d0%be-%d0%bd%d0%be-%d1%83%d0%bc%d0%bd%d0%be%d0%b3%d0%be-%d0%b0%d1%80%d0%b1%d0%b8%d1%82%d1%80/)
 
 # Instalação
 Baixe a versão mais recente de todos os arquivos deste repositório e carregue-os em sua hospedagem. Sua hospedagem deve ter **PHP versão 7.2 ou superior** habilitado e você deve **criar um certificado HTTPS para seu domínio. Sem HTTPS o clo não funcionará corretamente e a opção de simplesmente habilitar HTTPS no CloudFlare não funciona! Sim, se você usa CloudFlare, depois de ter recebido um certificado normal, habilite HTTPS no modo Full!** Posso [recomendar que você Beget hosting for clo](https://yellowweb.top/beget), é simples e conveniente e lá você pode emitir um certificado HTTPS com apenas alguns cliques.
